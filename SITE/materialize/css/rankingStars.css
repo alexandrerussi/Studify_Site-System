@@ -1,0 +1,91 @@
+﻿.starRating {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.FilledStars {
+    background-image: url("images/staramarela.png");
+}
+
+.WaitingStars {
+    background-image: url("images/staramarelaescura.png");
+}
+
+.EmptyStars {
+    background-image: url("images/starbranca.png");
+}
+
+.RatingPos1 {
+    margin-top: -15px;
+}
+
+.RatingPos2 {
+    margin-top: -15px;
+}
+
+.RatingPos3 {
+    margin-top: -15px;
+}
+
+@media only screen and (max-width : 1366px) {
+    .RatingPos1 {
+        margin-top: -8px;
+    }
+
+    .RatingPos2 {
+        margin-top: -8px;
+    }
+
+    .RatingPos3 {
+        margin-top: -8px;
+    }
+
+    .starRating {
+        margin-right: -5px;
+    }
+}
+
+@media only screen and (max-width : 1246px) {
+    .starRating {
+        margin-right: -8px;
+    }
+}
+
+@media only screen and (max-width : 1246px) {
+    .starRating {
+        margin-right: -12px;
+    }
+}
+
+@media only screen and (max-width : 993px) {
+    .RatingPos1 {
+        margin-top: -15px;
+    }
+
+    .RatingPos2 {
+        margin-top: -15px;
+    }
+
+    .RatingPos3 {
+        margin-top: -15px;
+    }
+
+    .starRating {
+        margin-right: -6px;
+    }
+}
+
+@media only screen and (max-width : 993px) {
+    .starRating {
+        margin-right: -6px;
+    }
+}
+
+@media only screen and (max-width : 542px) {
+    .starRating {
+        margin-right: -10px;
+    }
+}

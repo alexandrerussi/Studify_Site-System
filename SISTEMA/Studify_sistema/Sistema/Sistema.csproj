@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{80BE1070-5F1A-4930-B1D8-598718A9778B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sistema</RootNamespace>
+    <AssemblyName>Sistema</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>E67BFCD048C0AD50CF5121C41FE611251D27E5DE</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Sistema_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Edição\AlunoEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edição\AlunoEdit.Designer.cs">
+      <DependentUpon>AlunoEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edição\frmComentarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edição\frmComentarios.Designer.cs">
+      <DependentUpon>frmComentarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEnviaEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEnviaEmail.Designer.cs">
+      <DependentUpon>frmEnviaEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSobre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSobre.Designer.cs">
+      <DependentUpon>frmSobre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gerenciamento\frmSuporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gerenciamento\frmSuporte.Designer.cs">
+      <DependentUpon>frmSuporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edição\frmVisualizaSup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edição\frmVisualizaSup.Designer.cs">
+      <DependentUpon>frmVisualizaSup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gerenciamento\FrmAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gerenciamento\FrmAluno.Designer.cs">
+      <DependentUpon>FrmAluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gerenciamento\FrmFunc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gerenciamento\FrmFunc.Designer.cs">
+      <DependentUpon>FrmFunc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gerenciamento\FrmProf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gerenciamento\FrmProf.Designer.cs">
+      <DependentUpon>FrmProf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTelaInicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTelaInicial.Designer.cs">
+      <DependentUpon>FrmTelaInicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edição\FuncEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edição\FuncEdit.Designer.cs">
+      <DependentUpon>FuncEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edição\ProfEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edição\ProfEdit.Designer.cs">
+      <DependentUpon>ProfEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="StudifyDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StudifyDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StudifyPCDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StudifyPCDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <EmbeddedResource Include="Edição\AlunoEdit.resx">
+      <DependentUpon>AlunoEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edição\ProfEdit.resx">
+      <DependentUpon>ProfEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edição\frmComentarios.resx">
+      <DependentUpon>frmComentarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEnviaEmail.resx">
+      <DependentUpon>frmEnviaEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSobre.resx">
+      <DependentUpon>frmSobre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gerenciamento\frmSuporte.resx">
+      <DependentUpon>frmSuporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edição\frmVisualizaSup.resx">
+      <DependentUpon>frmVisualizaSup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gerenciamento\FrmAluno.resx">
+      <DependentUpon>FrmAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gerenciamento\FrmFunc.resx">
+      <DependentUpon>FrmFunc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTelaInicial.resx">
+      <DependentUpon>FrmTelaInicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edição\FuncEdit.resx">
+      <DependentUpon>FuncEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gerenciamento\FrmProf.resx">
+      <DependentUpon>FrmProf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\app.manifest" />
+    <None Include="StudifyDataSet.xsc">
+      <DependentUpon>StudifyDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StudifyDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StudifyDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StudifyDataSet.xss">
+      <DependentUpon>StudifyDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StudifyPCDataSet.xsc">
+      <DependentUpon>StudifyPCDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="StudifyPCDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StudifyPCDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="StudifyPCDataSet.xss">
+      <DependentUpon>StudifyPCDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\tile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logo.ico" />
+    <None Include="Resources\msg.png" />
+    <None Include="Resources\close-envelope %281%29.png" />
+    <None Include="Resources\close-envelope.png" />
+    <None Include="Resources\add-button-inside-black-circle.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\plus %281%29.png" />
+    <None Include="Resources\reload.png" />
+    <None Include="Resources\campo-v1.png" />
+    <None Include="Resources\db-error.png" />
+    <None Include="Resources\db-success.png" />
+    <None Include="Resources\magnifying-glass %282%29.png" />
+    <None Include="Resources\picture %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="logo.ico">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

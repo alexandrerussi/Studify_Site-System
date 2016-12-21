@@ -1,0 +1,2085 @@
+﻿/* Geral */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+::-moz-selection { /* Code for Firefox */
+    background: #f4511e;
+    color: #fff;
+}
+
+::selection {
+    color: #fff;
+    background: #f4511e;
+}
+
+p {
+    line-height: 2rem;
+}
+
+.textoJustificado {
+    text-align: justify;
+}
+
+/*effects divs*/
+.effectSlideUp, .effectSlideRight, .effectSlideExpandUp, .effectExpandUp, .logoHome {
+    visibility: hidden;
+}
+
+
+#ddlNivelAcademico, #ddlMateria, #DropDownList3, #DropDownList4 {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    cursor: pointer !important;
+    display: block !important;
+}
+
+#ddlNivelAcademico, #DropDownList3 {
+    margin-bottom: 10px;
+}
+
+    #ddlNivelAcademico option {
+        height: 40px;
+    }
+
+.ddlHome, .ddlSexo, .ddlEstado, .ddlDiaNascimento, .ddlMesNascimento, .ddlAnoNascimento {
+    background: url(../../images/seta.svg) no-repeat right;
+    /*box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);*/
+    background-color: #fff;
+    border-radius: 2px;
+    /*-webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer !important;
+    color: #020202;
+    font-weight: 500;*/
+}
+
+.ddlSexo, .ddlEstado, .ddlDiaNascimento, .ddlMesNascimento, .ddlAnoNascimento {
+    margin-top: 15px;
+}
+
+.ddlPerfilHome {
+    background: url(../../images/setaBranca.svg) no-repeat right;
+    background-size: 14px;
+    cursor: pointer !important;
+    width: 90%;
+    margin-left: 15px;
+}
+
+    .ddlPerfilHome input {
+        border: none !important;
+        width: 240px;
+        cursor: pointer !important;
+        padding-right: 5px;
+    }
+
+.ddlSexo, .ddlEstado, .ddlAnoNascimento, .ddlDiaNascimento, .ddlMesNascimento {
+    margin-bottom: 15px;
+}
+
+/*.ddlSexo, .ddlEstado {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    margin-top: -14px;
+    width: 98%;
+}*/
+.ddlEditDivs {
+    margin-top: 0px !important;
+    padding-right: 25px !important;
+}
+
+.ddlHome input {
+    border: none !important;
+    margin: 0;
+    margin-left: 15px;
+    cursor: pointer !important;
+    display: none;
+}
+
+.ddlSexo input, .ddlEstado input, .ddlDiaNascimento input, .ddlMesNascimento input, .ddlAnoNascimento input {
+    margin: 0;
+    cursor: pointer !important;
+}
+
+
+.ddlHome option, .ddlSexo option, .ddlEstado option {
+    color: rgba(0,0,0,0.84);
+    font-size: 16px;
+    height: 40px;
+}
+
+.paddingEditCheckBoxHome {
+    padding-right: 40px !important;
+}
+
+
+select:focus .clearBoth {
+    clear: both;
+}
+
+footer.page-footer {
+    margin: 0;
+}
+
+.fonteFina {
+    font-weight: 300;
+}
+
+.fonteGrossa {
+    font-weight: 700;
+}
+
+.titulo {
+    font-weight: 700;
+}
+
+.subtitulo {
+    margin-top: -35px;
+    font-weight: 200;
+}
+
+.handy {
+    cursor: pointer !important;
+}
+
+#btnPesquisarProf, #Cadastrar2 {
+    height: 36px;
+    width: auto;
+    padding-right: 35px !important;
+    padding-left: 35px !important;
+}
+
+.btnPesquisarProf, .Cadastrar2 {
+    padding: 0 !important;
+}
+
+
+/*hexagon icon*/
+.hexagonoIcon {
+    position: absolute;
+    left: 48.5%;
+    height: 50px;
+    width: 50px;
+    margin-top: -25px;
+}
+
+/* Menu */
+
+.btnMenu {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.linksSociais {
+    text-decoration: none;
+    color: #2b2b2b;
+}
+
+    .linksSociais:hover {
+        color: #ff6f00;
+        transition: .3s;
+    }
+
+#btnEnsinoFundamental, #btnEnsinoMedio, #btnPreVestibular, #btnEnsinoTecnico, #btnGraduacao {
+    padding: 20px 0px 20px 0px;
+}
+
+#btnEnsinoFundamentalMobile, #btnEnsinoMediolMobile, #btnPreVestibularlMobile, #btnEnsinoTecnicoMobile, #btnGraduacaoMobile {
+    padding: 10px 0px 10px 0px;
+}
+
+#btnPesquisarProfAside {
+    padding: 7px 35px 7px 35px;
+}
+
+#btnFundMat, #btnFundPort, #btnFundIng, #btnFundCienc, #btnFundIng, #btnFundHist, #btnFundGeo, #btnFundArtes, #btnFundEsp, #btnMedMat, #btnMedPort, #btnMedFis, #btnMedQui, #btnMedBio, #btnMedHist, #btnMedFilo, #btnMedSocio, #btnVestMat, #btnVestPort, #btnVestFis, #btnVestQui, #btnVestBio, #btnVestHist, #btnVestFilo, #btnVestSocio, #btnTecInfo, #btnTecMark, #btnTecEnfermagem, #btnTecMeca, #btnTecArtVis, #btnTecNutri, #btnTecEven, #btnTecBioComb, #btnGradEng, #btnGradMed, #btnGradLetras, #btnGradBio, #btnGradDir, #btnGradCiencSoc, #btnGradEco, #btnGradArq, #btnFundMatMob, #btnFundPortMob, #btnFundIngMob, #btnFundCiencMob, #btnFundIngMob, #btnFundHistMob, #btnFundGeoMob, #btnFundArtesMob, #btnFundEspMob, #btnMedMatMob, #btnMedPortMob, #btnMedFisMob, #btnMedQuiMob, #btnMedBioMob, #btnMedHistMob, #btnMedFiloMob, #btnMedSocioMob, #btnVestMatMob, #btnVestPortMob, #btnVestFisMob, #btnVestQuiMob, #btnVestBioMob, #btnVestHistMob, #btnVestFiloMob, #btnVestSocioMob, #btnTecInfoMob, #btnTecMarkMob, #btnTecEnfermagemMob, #btnTecMecaMob, #btnTecArtVisMob, #btnTecNutriMob, #btnTecEvenMob, #btnTecBioCombMob, #btnGradEngMob, #btnGradMedMob, #btnGradLetrasMob, #btnGradBioMob, #btnGradDirMob, #btnGradCiencSocMob, #btnGradEcoMob, #btnGradArqMob {
+    padding: 7px 0px 7px 0px;
+}
+
+nav ul a, nav .brand-logo {
+    color: #fff;
+}
+
+    nav ul a:hover, .divMarginRodapeCategorias ul a:hover {
+        transition: 0.5s;
+        color: #ff6f00 !important;
+    }
+
+.menu-header {
+    display: inline;
+}
+
+.menuHome {
+    margin-top: 0;
+    background-color: rgba(255,255,255,0) !important;
+    box-shadow: none !important;
+    display: block;
+}
+
+.marginMenu {
+    margin-left: 20px;
+}
+
+.hoverEditMenuMobile {
+    color: #fff !important;
+}
+
+    .hoverEditMenuMobile:hover {
+        color: #ddd !important;
+    }
+
+
+@media only screen and (min-width: 996px) {
+    .containerMenu {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+
+/*Menu Colorido*/
+
+.tealColoredMenu {
+    background-color: rgba(0,150,136, 0.8);
+}
+
+
+.btnColoredMenu2 {
+    font-size: 16px;
+    display: none;
+}
+
+@media only screen and (min-width: 1250px) {
+    .containerColoredMenu {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width : 1200px) {
+    nav ul .fontColoredMenu a {
+        font-size: 0.95rem;
+    }
+
+    .btnColoredMenu2 {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width : 1590px) {
+    .btnColoredMenu1 {
+        display: none;
+    }
+
+    .btnColoredMenu2 {
+        display: inline-block;
+    }
+}
+
+/*Modal 1*/
+
+.modalLogin {
+    width: 45%;
+    padding: 0px 60px;
+}
+
+@media only screen and (max-width : 993px) {
+    .modalLogin {
+        width: 90%;
+        padding: 0px 60px;
+    }
+}
+
+.subM1 {
+    margin-top: -25px !important;
+}
+
+.entrarM1 {
+    padding: 0 !important;
+}
+
+#btnLogar {
+    height: 54px;
+    width: auto;
+    padding-right: 115px !important;
+    padding-left: 115px !important;
+}
+
+/*Modal 2*/
+
+.subtituloModal2 {
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+.modal-cadastro {
+    max-height: 85%;
+}
+
+@media only screen and (max-width : 1227px) {
+    .imgModal2 {
+        height: 273px;
+        width: auto;
+    }
+}
+
+@media only screen and (max-width : 1170px) {
+    .imgModal2 {
+        height: 230px;
+        width: auto;
+    }
+}
+
+@media only screen and (max-width : 996px) {
+    .imgModal2 {
+        height: 193px;
+        width: auto;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    .imgModal2 {
+        height: 153px;
+        width: auto;
+    }
+}
+
+@media only screen and (max-width : 340px) {
+    .imgModal2 {
+        height: 113px;
+        width: auto;
+    }
+}
+
+/* Banner */
+
+.tituloHome {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+
+.button-collapse {
+    color: #fff;
+}
+
+.banner {
+    width: 100%;
+    display: table;
+    position: static;
+    margin: 0;
+    height: 100vh;
+    padding-bottom: 20px;
+    background-image: url('http://studify.com.br/images/imgSlide/p1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+}
+
+.middle-contentHome {
+    display: table-row;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.logoHomeDiv {
+    margin-top: 15px !important;
+}
+
+@media only screen and (min-width : 1400px) {
+    .banner {
+        background-image: url('../../images/imgSlide/p1.jpg');
+        background-size: 100% 100%;
+
+    }
+}
+
+@media only screen and (max-width : 600px) {
+    .banner {
+        background-image: url('../../images/imgSlide/r1.jpg');
+        background-size: 100% 100%;
+
+    }
+}
+
+@media only screen and (max-width : 1200px) {
+    .tituloHome {
+        font-size: 30px;
+    }
+
+    h3 {
+        margin: 0;
+    }
+
+    .logoHome {
+        width: 310px;
+        height: 122px;
+    }
+
+    .logoHomePad {
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (max-width : 900px) {
+    video {
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width : 690px) {
+    .banner {
+        padding-bottom: 0px;
+        height: 700px;
+    }
+}
+
+@media only screen and (max-width : 470px) {
+    .banner {
+        height: 550px;
+    }
+
+    .tituloHome {
+        font-size: 20px;
+    }
+}
+
+.divDropdowns {
+    width: 45% !important;
+}
+
+.divDdlMaterias {
+    left: 0px !important;
+    right: 0px !important;
+    top: 2px !important;
+}
+
+
+/*Menu fixado*/
+
+.buscaFixed {
+    display: none;
+    margin: 0;
+    height: 220px;
+    padding-bottom: 220px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: rgb(244, 81, 30);
+}
+
+.btnPesquisarProfFixed {
+    margin-top: 17px;
+    font-size: 17px;
+    height: 40px;
+    width: 100%;
+}
+
+.stick {
+    display: inline !important;
+}
+
+@media only screen and (max-width : 1300px) {
+    .btnPesquisarProfFixed {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width : 1080px) {
+    .btnPesquisarProfFixed {
+        font-size: 14px;
+    }
+}
+
+.buscaFixedMobile {
+    display: none;
+    color: #fff;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+.btnPesquisarMobileFixed {
+    margin: 0;
+    z-index: 100;
+    opacity: 0.8;
+    transition: .3s;
+}
+
+    .btnPesquisarMobileFixed:hover {
+        opacity: 1;
+        transition: .3s;
+    }
+
+.alignCheckBoxFixedScrollBtnModal {
+    text-align: right;
+}
+
+@media only screen and (max-width : 600px) {
+    .alignCheckBoxFixedScrollBtnModal {
+        text-align: left;
+    }
+}
+
+
+/*Parte 2*/
+.parte2 {
+    background-color: #e9f0f5 !important;
+    padding-bottom: 20px;
+    padding-top: 18px;
+}
+
+.imgParte2 {
+    margin-top: -30px;
+}
+
+.iconP2 {
+    margin-top: 35px;
+}
+
+.tituloP2 {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.subP2 {
+    font-size: 16px;
+}
+
+/*Parte 3*/
+
+.parte3 {
+    background-color: #009688;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+.rankingPos1 {
+    background-color: #fff;
+    height: 80px;
+    border-radius: 2px;
+    margin-top: 10px;
+    width: 95% !important;
+}
+
+.rankingPos1Mobile {
+    background-color: #fff;
+    height: 80px;
+    border-radius: 2px;
+    margin-top: 10px;
+    margin-left: 25px !important;
+    width: 90% !important;
+}
+
+.rankingPos2 {
+    background-color: #fff;
+    height: 80px;
+    border-radius: 2px;
+    margin-top: 10px;
+    width: 87% !important;
+}
+
+.rankingPos2Mobile {
+    background-color: #fff;
+    height: 80px;
+    border-radius: 2px;
+    margin-top: 10px;
+    margin-left: 25px !important;
+    width: 90% !important;
+}
+
+.rankingPos3 {
+    background-color: #fff;
+    height: 80px;
+    border-radius: 2px;
+    margin-top: 10px;
+    margin-bottom: 22px;
+    width: 79% !important;
+}
+
+.rankingPos3Mobile {
+    background-color: #fff;
+    height: 80px;
+    border-radius: 2px;
+    margin-top: 10px;
+    margin-bottom: 22px;
+    margin-left: 25px !important;
+    width: 90% !important;
+}
+
+.perfil-img {
+    width: 100px;
+    height: 100px;
+    margin-top: -8px;
+    margin-left: -35px;
+    border: solid 5px #fff;
+}
+
+.nomeRanking1 {
+    font-size: 20px;
+    margin-left: 15px;
+    margin-bottom: -10px;
+}
+
+.subTextRanking1 {
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.nomeRanking2 {
+    font-size: 20px;
+    margin-left: 16px;
+    margin-bottom: -10px;
+}
+
+.subTextRanking2 {
+    margin-left: 16px;
+    font-size: 14px;
+}
+
+.nomeRanking3 {
+    font-size: 20px;
+    margin-left: 19px;
+    margin-bottom: -10px;
+}
+
+.subTextRanking3 {
+    margin-left: 19px;
+    font-size: 14px;
+}
+
+/*PARTE DISCIPLINAS*/
+
+.iconeDisciplina {
+    transition: .3s;
+}
+
+    .iconeDisciplina:hover {
+        opacity: 0.9;
+        transition: .3s;
+    }
+
+        .iconeDisciplina:hover .linkDisciplina, .linkDisciplina:hover {
+            transition: .3s;
+            background-color: #eee;
+            color: #f4511e;
+        }
+
+@media only screen and (max-width : 540px) {
+    .iconeDisciplina {
+        width: 94px !important;
+        height: 111px !important;
+    }
+}
+
+.linkDisciplina {
+    text-decoration: none;
+    background-color: #fff;
+    font-weight: 300;
+    padding: 8px;
+    color: #2b2b2b;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    transition: .3s;
+}
+
+/*Parte 4*/
+.lblParte4 {
+    font-size: 2.92rem;
+}
+
+.hideme {
+    opacity: 0;
+}
+
+.parte4 {
+    background-image: url('../../images/parte4.jpg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: -20px;
+}
+
+
+@media only screen and (max-width : 992px) {
+    .parte4 {
+        background-image: url('../../images/backMobile2.jpg');
+        margin-top: -20px;
+    }
+}
+
+.textinhoParte4 {
+    margin-top: -15px;
+}
+
+.lastRowP4 {
+    margin-bottom: 0 !important;
+}
+
+/*Parte 5*/
+
+.parte5 {
+    background-color: #fff;
+    padding-bottom: 30px;
+}
+
+@media only screen and (max-width : 1227px) {
+    .imgParte5 {
+        width: 323px;
+        height: 383px;
+    }
+}
+
+@media only screen and (max-width : 1039px) {
+    .imgParte5 {
+        width: 308px;
+        height: 368px;
+    }
+}
+
+@media only screen and (max-width : 992px) {
+    .imgParte5 {
+        width: 383px;
+        height: 433px;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    .imgParte5 {
+        width: 308px;
+        height: 368px;
+    }
+}
+
+@media only screen and (max-width : 340px) {
+    .imgParte5 {
+        width: 268px;
+        height: 328px;
+    }
+}
+
+/*Parte 6*/
+
+.parte6 {
+    padding-top: 50px;
+    background-color: #f4511e;
+    height: auto;
+    margin-bottom: -26px;
+}
+
+.fotoCelParte6 {
+    margin-right: 40px;
+    text-align: right;
+}
+
+.ContentPart6 {
+    margin-bottom: 40px;
+}
+
+.titleParte6 {
+    margin-top: 70px;
+    text-align: left;
+}
+
+.textParte6 {
+    font-size: 18px;
+    color: #fff;
+    text-align: left;
+    font-weight: 300;
+}
+
+.btnParte6 {
+    margin-top: 50px;
+}
+
+
+.espaçoBtns {
+    margin-right: 6px;
+}
+
+@media only screen and (max-width : 1399px) {
+
+    .ContentPart6 {
+        margin-bottom: 0px;
+    }
+
+    .titleParte6 {
+        margin-top: 50px;
+        font-size: 50px;
+    }
+
+    .btnParte6 {
+        margin-top: 25px;
+    }
+}
+
+@media only screen and (max-width : 1080px) {
+    .ContentPart6 {
+        margin-bottom: 0px;
+    }
+
+    .titleParte6 {
+        margin-top: 10px;
+        font-size: 46px;
+    }
+
+    .btnParte6 {
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (max-width : 1000px) {
+    .ContentPart6 {
+        margin-bottom: 0px;
+    }
+
+    .titleParte6 {
+        margin-top: 10px;
+        font-size: 46px;
+    }
+
+    .btnParte6 {
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (max-width : 996px) {
+    .fotoCelParte6 {
+        text-align: center;
+    }
+
+    .ContentPart6 {
+        text-align: justify;
+        margin-bottom: 60px;
+    }
+
+    .btnParte6 {
+        text-align: center;
+    }
+
+    .titleParte6 {
+        text-align: center;
+        font-size: 44px;
+    }
+
+    .textParte6 {
+        text-align: justify;
+    }
+}
+
+
+/*RODAPÉ*/
+
+rodape {
+    font-family: 'Roboto', sans-serif;
+    line-height: 230%;
+    font-weight: 200;
+}
+
+
+.divRodape {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    height: auto;
+}
+
+.divMarginRodapeCategorias {
+    margin-right: 0 !important;
+}
+
+.divMarginTopRodape {
+    margin-top: 25px !important;
+}
+
+#Cadastrar2 {
+    line-height: 36px !important;
+}
+
+.borderNone {
+    border: none !important;
+}
+
+#Button1:active {
+    border: none !important;
+}
+
+/*CADASTRO ALUNO*/
+.logo-img, .logo-img-editCadastro {
+    width: auto;
+    height: 40px;
+    vertical-align: middle;
+}
+
+.login2Aluno {
+    display: none;
+}
+
+@media only screen and (max-width : 1205px) {
+    .login1Aluno {
+        display: none;
+    }
+
+    .login2Aluno {
+        display: inline-block;
+    }
+
+    .logo-img-editCadastro {
+        width: auto;
+        height: 35px;
+        vertical-align: middle;
+    }
+}
+
+.paddingEditCadastro {
+    padding-right: 26px !important;
+}
+
+.btnCadastroAluno {
+    height: 55px !important;
+    line-height: 55px !important;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.btnFinalizar {
+    height: 55px !important;
+    line-height: 55px !important;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.btnInfoSocial {
+    margin-left: 10px !important;
+}
+
+.marginLeftTermos {
+    margin-left: 20px;
+}
+
+.rdbAceitarTermo label {
+    color: #000;
+}
+
+#btnInfoPessoalProf, #btnInfoTecnico, #btnVideoCadastro {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}
+
+.passos {
+    width: 80% !important;
+}
+
+.marginLogoCadMobile {
+    margin-right: 30px;
+}
+
+.marginTopBtnFinalizar {
+    margin-top: 30px;
+}
+
+.marginTopBtnFinalizar2 {
+    margin-top: 38px;
+}
+
+.labelImagemCadastro {
+    font-size: 18px;
+    color: #9e9e9e;
+    font-weight: 400;
+}
+
+.fileUploadCadastro input[type=file], input[type=file] + input {
+    display: inline-block;
+    font-size: 16px;
+    color: #9e9e9e;
+    width: 100%;
+}
+
+    .fileUploadCadastro input[type=file] + input {
+        padding: 13px;
+        background-color: #00b7cd;
+    }
+
+.fileUploadCadastro ::-webkit-file-upload-button {
+    -webkit-appearance: none;
+    background-color: #009688;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 15px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    height: 50px;
+}
+
+    .fileUploadCadastro ::-webkit-file-upload-button:hover {
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+        cursor: pointer;
+    }
+
+
+.ckbListAgenda [type="checkbox"] + label:before, [type="checkbox"]:not(.filled-in) + label:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #009688;
+    border-radius: 1px;
+    margin-top: 2px;
+    transition: .2s;
+}
+
+.ckbListAgenda [type="checkbox"]:checked + label:before {
+    top: -4px;
+    left: -5px;
+    width: 12px;
+    height: 22px;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid #26a69a;
+    border-bottom: 2px solid #26a69a;
+    -webkit-transform: rotate(40deg);
+    transform: rotate(40deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+}
+
+.ckbListAgenda label {
+    color: #000;
+    font-size: 16px;
+}
+
+.btnCadastroAlunoAgenda {
+    height: 55px;
+    line-height: 55px;
+    padding: 0 100px;
+}
+
+@media only screen and (max-width : 1200px) {
+    .btnCadastroAluno {
+        font-size: 12px !important;
+    }
+}
+
+@media only screen and (max-width : 1080px) {
+    .btnCadastroAluno {
+        font-size: 11px !important;
+    }
+}
+
+@media only screen and (max-width : 992px) {
+    .btnCadastroAluno {
+        font-size: 14px !important;
+    }
+}
+
+@media only screen and (max-width : 1200px) {
+    .btnCadastroAluno {
+        font-size: 12px !important;
+    }
+}
+
+@media only screen and (max-width : 1080px) {
+    .btnCadastroAluno {
+        font-size: 11px !important;
+    }
+}
+
+@media only screen and (max-width : 992px) {
+    .btnCadastroAluno {
+        font-size: 14px !important;
+    }
+}
+
+/*PERFIL PROFESSOR*/
+
+.backImagePerfil {
+    background-image: url('../../images/topoProfessor.jpg');
+}
+
+.marginPerfil {
+    margin: 10px 110px 0;
+}
+
+.imgPerfilProf {
+    width: 250px;
+    height: 250px;
+}
+
+.titlePerfil {
+    padding-left: 70px !important;
+    padding-top: 70px !important;
+}
+
+.tituloPerfil {
+    font-weight: 700;
+    font-size: 2.92rem;
+}
+
+.subtituloPerfil {
+    margin-top: -15px;
+    font-weight: 300;
+    font-size: 26px;
+}
+
+.ratingsPerfil {
+    padding-top: 90px !important;
+}
+
+.estrelaProfile {
+    width: 350px;
+    height: 60px;
+}
+
+
+.cardTitulo {
+    font-weight: 700 !important;
+    font-size: 42px !important;
+}
+
+.cardText {
+    margin-top: 20px !important;
+    margin-bottom: 10px !important;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.videoPerfil {
+    width: 100%;
+    height: 575px;
+}
+
+.imgContatosPerfil {
+    height: 75px;
+    width: 75px;
+}
+
+.tituloVerContatos {
+    font-weight: 700;
+    font-size: 46px;
+    text-align: center;
+}
+
+.subtituloVerContatos {
+    font-weight: 300;
+    font-size: 26px;
+    margin-top: -15px;
+    text-align: center;
+}
+
+.legendaVerContatos {
+    margin-top: -10px;
+    font-size: 16px;
+}
+
+.imgTelefoneVerContatos {
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+}
+
+.telefoneVerContatos {
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+.alignTelefoneVerContatos1 {
+    text-align: right;
+}
+
+.alignTelefoneVerContatos2 {
+    text-align: left;
+}
+
+
+.precoPerfil {
+    font-size: 34px;
+    height: 75px;
+    padding-top: 18px;
+    font-weight: 300;
+    margin-top: 0;
+}
+
+.numeroPrecoPerfil {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.btnAgendarPerfil {
+    width: 65%;
+    height: 65px;
+    padding-top: 15px;
+    margin-top: 43px;
+    font-size: 17px;
+}
+
+.fonteAgenda {
+    font-size: 18px;
+}
+
+.ContatosPerfil {
+    font-size: 20px;
+    color: #616161;
+}
+
+    .ContatosPerfil:hover {
+        color: #f4511e;
+    }
+
+.heightPerfilLine2 {
+    min-height: 270px;
+}
+
+.cardExperiencia {
+    min-height: 400px;
+}
+
+.leiaMais {
+    font-size: 18px;
+    color: #009688;
+}
+
+    .leiaMais:hover {
+        font-size: 18px;
+        color: #f4511e;
+        transition: .3s;
+    }
+
+.tituloComentarios {
+    margin-top: 50px;
+    color: #616161;
+    font-size: 1.74rem;
+    font-weight: 500;
+}
+
+.marginTop10 {
+    margin-top: 10px;
+}
+
+.marginTop30 {
+    margin-top: 30px;
+}
+
+.imgComentario {
+    margin-top: 20px;
+    width: 120px;
+    height: 120px;
+}
+
+.comentCol, .ratingsComentario {
+    margin-top: 20px;
+}
+
+.nomeComentario {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #424242;
+    padding-left: 10px;
+}
+
+.comentarioFeito {
+    font-size: 18px;
+    color: #424242;
+    padding-left: 10px;
+    font-weight: 300 !important;
+}
+
+.ratingsComentario {
+    padding-top: 5px !important;
+}
+
+.legendaRating {
+    font-size: 18px;
+    color: #616161;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+.estrelaComentProfile {
+    width: 250px;
+    height: 45px;
+}
+
+.inputComentario {
+    margin-top: 30px;
+}
+
+.labelTextarea {
+    font-size: 26px !important;
+}
+
+.ddlAvaliarComentario {
+    background: url(../../images/seta.svg) no-repeat right;
+    background-color: #fff;
+    border-radius: 2px;
+    left: 25%;
+    width: 50%;
+    text-align: center;
+}
+
+    .ddlAvaliarComentario:hover {
+        cursor: pointer;
+    }
+
+.btnComentar {
+    width: 100%;
+    height: 55px;
+    padding-top: 10px;
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+.hexagonoIconPerfil {
+    position: absolute;
+    margin-left: 13px;
+    left: 48%;
+    height: 50px;
+    width: 50px;
+    margin-top: -25px;
+}
+
+
+@media only screen and (max-width : 1700px) {
+    .btnComentar {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width : 1640px) {
+    .nomeComentario {
+        padding-left: 20px;
+    }
+
+    .comentarioFeito {
+        padding-left: 20px;
+    }
+
+    .ratingsComentario {
+        padding-left: 0px !important;
+    }
+
+    .inputComentario {
+        margin-left: 20px !important;
+    }
+
+    .btnComentar {
+        font-size: 14px;
+    }
+
+    .imgContatosPerfil {
+        height: 70px;
+        width: 70px;
+    }
+
+    .telefoneVerContatos {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width : 1520px) {
+    .tituloPerfil {
+        font-size: 2.72rem;
+        font-weight: 700;
+    }
+
+    .imgPerfilProf {
+        width: 250px;
+        height: 250px;
+    }
+
+    .nomeComentario {
+        font-size: 27px;
+        padding-left: 30px;
+    }
+
+    .comentarioFeito {
+        padding-left: 30px;
+        font-size: 18px;
+    }
+
+    .inputComentario {
+        width: 95% !important;
+    }
+
+    .imgContatosPerfil {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+@media only screen and (max-width : 1440px) {
+    .estrelaComentProfile {
+        width: 220px;
+        height: 40px;
+    }
+
+    .ratingsPerfil {
+        padding-top: 80px !important;
+    }
+
+    .estrelaProfile {
+        width: 330px;
+        height: 55px;
+    }
+
+    .bannerPerfil {
+        height: 272px;
+    }
+
+    .imgPerfilProf {
+        width: 230px;
+        height: 230px;
+    }
+
+    .tituloPerfil {
+        font-size: 2.52rem;
+    }
+}
+
+@media only screen and (max-width : 1366px) {
+    .videoPerfil {
+        height: 565px;
+    }
+
+    .marginPerfil {
+        margin: 10px 60px 0;
+    }
+
+    .nomeComentario {
+        padding-left: 35px;
+        font-size: 26px;
+    }
+
+    .comentarioFeito {
+        padding-left: 35px;
+    }
+
+    .imgContatosPerfil {
+        height: 45px;
+        width: 45px;
+    }
+
+    .legendaVerContatos {
+        font-size: 14px;
+    }
+
+    .telefoneVerContatos {
+        font-size: 14px;
+    }
+
+    .imgTelefoneVerContatos {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media only screen and (max-width : 1280px) {
+    .videoPerfil {
+        height: 565px;
+    }
+
+    .marginPerfil {
+        margin: 10px 20px 0;
+    }
+
+    .nomeComentario {
+        padding-left: 30px;
+    }
+
+    .comentarioFeito {
+        padding-left: 30px;
+        font-size: 17px;
+    }
+
+    .estrelaComentProfile {
+        width: 200px;
+        height: 35px;
+    }
+
+    .imgContatosPerfil {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media only screen and (max-width : 1200px) {
+    .subtituloPerfil {
+        margin-top: 0;
+    }
+
+    .tituloPerfil {
+        font-size: 2.25rem;
+    }
+
+    .bannerPerfil {
+        height: 252px;
+    }
+
+    .ratingsPerfil {
+        padding-top: 70px !important;
+    }
+
+    .estrelaProfile {
+        width: 300px;
+        height: 50px;
+    }
+
+    .imgPerfilProf {
+        width: 220px;
+        height: 220px;
+    }
+
+    .subtituloPerfil {
+        font-size: 24px;
+    }
+
+    .nomeComentario {
+        font-size: 25px;
+        padding-left: 50px;
+    }
+
+    .comentarioFeito {
+        padding-left: 50px;
+    }
+
+    .inputComentario {
+        margin-left: 45px !important;
+    }
+
+
+    .legendaVerContatos {
+        font-size: 13px;
+    }
+
+    .telefoneVerContatos {
+        font-size: 12px;
+    }
+
+    .imgTelefoneVerContatos {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media only screen and (max-width : 1060px) {
+    .tituloPerfil {
+        font-size: 2.0rem;
+    }
+
+    .bannerPerfil {
+        height: 242px;
+    }
+
+    .ratingsPerfil {
+        padding-top: 65px !important;
+    }
+
+    .estrelaComentProfile {
+        width: 190px;
+        height: 30px;
+    }
+
+    .estrelaProfile {
+        width: 290px;
+        height: 50px;
+    }
+
+    .imgPerfilProf {
+        width: 205px;
+        height: 205px;
+    }
+
+    .comentarioFeito {
+        font-size: 16px;
+    }
+
+    .telefoneVerContatos {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width : 992px) {
+    .estrelaComentProfile {
+        width: 250px;
+        height: 45px;
+    }
+
+
+    .ratingsPerfil {
+        padding-top: 65px !important;
+    }
+
+    .estrelaProfile {
+        width: 270px;
+        height: 45px;
+    }
+
+    .ratingsComentario {
+        padding-top: 10px !important;
+        text-align: center;
+        padding-left: 0px !important;
+    }
+
+    .nomeComentario {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .imgComentarioCol {
+        text-align: center;
+    }
+
+    .comentCol {
+        margin-left: 0px !important;
+    }
+
+    .nomeComentario {
+        padding-left: 0;
+        font-size: 28px;
+    }
+
+    .comentarioFeito {
+        padding-left: 0;
+        font-size: 20px;
+    }
+
+    .inputComentario {
+        margin-left: 0 !important;
+    }
+
+    .btnComentar {
+        width: 60%;
+    }
+
+    .alignTelefoneVerContatos1 {
+        text-align: center;
+    }
+
+    .alignTelefoneVerContatos2 {
+        text-align: center;
+    }
+
+    .imgContatosPerfil {
+        height: 75px;
+        width: 75px;
+    }
+
+    .legendaVerContatos {
+        font-size: 16px;
+    }
+
+    .imgTelefoneVerContatos {
+        width: 40px;
+        height: 40px;
+    }
+
+    .telefoneVerContatos {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width : 950px) {
+    .titlePerfil {
+        padding-top: 55px !important;
+    }
+
+    .tituloPerfil {
+        font-size: 1.85rem;
+    }
+
+    .subtituloPerfil {
+        font-size: 22px;
+    }
+
+    .bannerPerfil {
+        height: 235px;
+    }
+
+    .imgPerfilProf {
+        width: 190px;
+        height: 190px;
+    }
+}
+
+@media only screen and (max-width : 845px) {
+    .titlePerfil {
+        padding-top: 15px !important;
+    }
+
+    .tituloPerfil {
+        font-size: 2.0rem;
+    }
+
+    .subtituloPerfil {
+        font-size: 20px;
+    }
+
+    .bannerPerfil {
+        height: 210px;
+    }
+
+    .imgPerfilProf {
+        width: 150px;
+        height: 150px;
+    }
+
+    .marginPerfil {
+        margin: 10px 8px 0;
+    }
+
+    .ratingsPerfil {
+        padding-top: 20px !important;
+        padding-left: 0px !important;
+    }
+}
+
+@media only screen and (max-width : 690px) {
+    .ratingsPerfil {
+        padding-top: 20px !important;
+    }
+
+    .estrelaProfile {
+        width: 230px;
+        height: 40px;
+    }
+
+    .marginPerfil {
+        margin: 10px 5px 0;
+    }
+}
+
+@media only screen and (max-width : 600px) {
+    .titlePerfil {
+        padding-top: 0px !important;
+    }
+
+    .tituloPerfil {
+        font-size: 1.60rem;
+    }
+
+    .subtituloPerfil {
+        font-size: 17px;
+    }
+
+    .bannerPerfil {
+        height: 190px;
+    }
+
+    .ratingsPerfil {
+        padding-top: 5px !important;
+        padding-left: 70px !important;
+    }
+
+    .estrelaProfile {
+        width: 140px;
+        height: 25px;
+    }
+
+
+    .imgPerfilProf {
+        width: 120px;
+        height: 120px;
+    }
+
+    .votoPerfil {
+        text-align: left;
+    }
+
+    .marginPerfil {
+        margin: 10px 8px 0;
+    }
+
+    .comentCol {
+        margin-left: 0px !important;
+    }
+}
+
+/* Modais da Página PerfilProfessor.aspx*/
+
+.modalPerfilProf {
+    max-height: 100%;
+}
+
+/*PAGINA REPEATER PROFESSOR*/
+
+.btnPesquisarProfRepeat {
+    height: 45px;
+    line-height: 45px;
+    margin-top: 15px;
+}
+
+.txtDeAteFaixa {
+    height: 20px !important;
+    font-size: 18px;
+}
+
+.alignDeAte {
+    text-align: center;
+}
+
+.totalProfessoresEncontrados {
+    font-size: 32px;
+}
+
+.linhaNomeProfessorPesquisa {
+    margin-top: 20px;
+}
+
+.nomeProfessorPesquisa {
+    font-size: 34px;
+}
+
+.materiaProfessorPesquisa {
+    font-size: 24px;
+}
+
+.noFreakingPadding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.divValorAulaPesquisa {
+    right: 0;
+    top: 0;
+    padding: 10px !important;
+}
+
+.valorAula {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.porHora {
+    font-size: 22px;
+    color: #fff;
+    font-weight: 300;
+    margin: 2px;
+}
+
+.paddingEditCardRepeaterProf {
+    padding: 0px !important;
+}
+
+.marginBottomZero {
+    margin-bottom: 0 !important;
+}
+
+.imgRepeaterProf {
+    width: 100%;
+    height: 100%;
+    margin: 20px 0;
+}
+
+@media only screen and (max-width : 1600px) {
+    .valorAula {
+        font-size: 26px;
+    }
+
+    .porHora {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width : 1360px) {
+    .valorAula {
+        font-size: 22px;
+    }
+
+    .porHora {
+        font-size: 16px;
+    }
+}
+
+
+@media only screen and (max-width : 1200px) {
+    .bannerPesquisaProfessor {
+        height: 224px;
+    }
+
+    .valorAula {
+        font-size: 18px;
+    }
+
+    .porHora {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width : 1080px) {
+    .btnPesquisarProfRepeat {
+        font-size: 12px;
+    }
+
+    .valorAula {
+        font-size: 17px;
+    }
+
+    .porHora {
+        font-size: 14px;
+    }
+}
+
+
+@media only screen and (max-width : 992px) {
+    .bannerPesquisaProfessor {
+        height: 284px;
+    }
+
+    .alignDeAte {
+        text-align: left;
+    }
+
+    .totalProfessoresEncontrados {
+        font-size: 26px;
+    }
+
+    .linhaNomeProfessorPesquisa {
+        text-align: center;
+        margin-top: 0px;
+    }
+
+
+    .linhaMateriaProfessorPesquisa {
+        text-align: center;
+    }
+
+    .divValorAulaPesquisa {
+        text-align: center;
+        left: 0;
+        top: 0;
+        margin: 20px 0;
+    }
+
+    .valorAula {
+        font-size: 26px;
+    }
+
+    .porHora {
+        font-size: 18px;
+    }
+
+    .imgRepeaterProf {
+        width: 65%;
+        height: 65%;
+    }
+}
+
+/*PERGUNTAS FREQUENTES*/
+
+
+.collapsiblePerguntas {
+    border-radius: 2px;
+    border: 0 !important;
+}
+
+.headerCollapsiblePerguntas {
+    font-size: 20px;
+    border-bottom: 1px solid #cbcbcb;
+}
+
+.headerCollapsibleFinanceiro {
+    border-left: 5px solid #ffdb06;
+}
+
+.headerCollapsibleAulas {
+    border-left: 5px solid #1565c0;
+}
+
+.headerCollapsibleProfessores {
+    border-left: 5px solid #c62828;
+}
+
+.headerCollapsibleTecnicas {
+    border-left: 5px solid #2e7d32;
+}
+
+.collapsiblePerguntas .collapsible-body {
+    border-bottom: 1px solid #cbcbcb;
+}
+
+.collapsible-body p {
+    margin: 0 !important;
+}
+
+.collapsibleContentPerguntas {
+    padding: 10px;
+    font-size: 18px;
+}
+
+.collapsibleContentPerguntasFinanceiro {
+    border-left: 5px solid #ffdb06;
+}
+
+.collapsibleContentPerguntasAulas {
+    border-left: 5px solid #1565c0;
+}
+
+.collapsibleContentPerguntasProfessores {
+    border-left: 5px solid #c62828;
+}
+
+.collapsibleContentPerguntasTecnicas {
+    border-left: 5px solid #2e7d32;
+}
+
+.subCollapsibleHeader {
+    font-size: 18px;
+}
+
+/*Página Política de segurança*/
+
+.headerCollapsiblePoliticaSeguranca, .headerCollapsiblePoliticaSeguranca2 {
+    padding: 10px;
+}
+
+.headerCollapsiblePoliticaSeguranca, .collapsiblePoliticaSeguranca {
+    border-left: 5px solid #009688;
+}
+
+
+.headerCollapsiblePoliticaSeguranca2, .collapsiblePoliticaSeguranca2 {
+    border-left: 5px solid #ff7043;
+}
+
+
+.oquesignificaPolitica {
+    margin: 50px 0;
+    font-size: 20px;
+}
+
+/*Páginas editar perfil*/
+
+.cardEditarPerfil {
+    margin-bottom: 40px;
+}
+
+
+.dividerEditarAluno {
+    margin: 40px 0;
+}
+
+/*Página Esqueci minha senha*/
+
+.btnEsqueci {
+    height: 50px;
+    margin-top: 10px;
+}
