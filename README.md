@@ -1,6 +1,6 @@
 # Studify Education
 
-In partnership with FIAP School, I created a project of startup to develop and improve education in our country. It is an online tutoring platform that helps teachers who give private classes and students who need it.
+In partnership with FIAP School, we created a project of startup to develop and improve education in our country. It is an online tutoring platform that helps teachers who give private classes and students who need it.
 
 Know more: https://youtu.be/cuD3hbHpMBA
 
