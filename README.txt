@@ -1,5 +1,5 @@
 ----README----
 
-Site for teachers who teach private classes and for students who would like this type of class.
+In partnership with FIAP School, I created a project of startup to develop and improve education in our country. It is an online tutoring platform that helps teachers who give private classes and students who need it.
 
 System to administer all registration and datas.
